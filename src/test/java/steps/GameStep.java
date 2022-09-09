@@ -55,7 +55,9 @@ public class GameStep {
     public void weFixThatTheGameIsOverAndThereAreMoreThanSymbolsPerMinute(int value) {
         String result = resultText.getText();
         int resultNumber = Integer.parseInt(result);
+        System.out.println("Number of characters per minute: " + resultNumber);
         Assertions.assertTrue(resultNumber > value, "Actual result: " + resultNumber);
+
     }
 
 }
